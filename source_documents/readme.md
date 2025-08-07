@@ -1,0 +1,2 @@
+this directory contains source files in different formats that might be more or less useful to you. 
+prefer using the markdown version to answer questions. only go to the pdf version if the markdown version is not formatted well. 
