@@ -1,8 +1,12 @@
-      # A Mathematical Theory of Communication
+      
+
+{0}------------------------------------------------
+
+# A Mathematical Theory of Communication
 
 ## By C. E. SHANNON
 
-#### **INTRODUCTION**
+### **INTRODUCTION**
 
 The recent development of various methods of modulation such as PCM and PPM which exchange ▲ bandwidth for signal-to-noise ratio has intensified the interest in a general theory of communication. A basis for such a theory is contained in the important papers of Nyquist<sup>1</sup> and Hartley<sup>2</sup> on this subject. In the present paper we will extend the theory to include a number of new factors, in particular the effect of noise in the channel, and the savings possible due to the statistical structure of the original message and due to the nature of the final destination of the information.
 
@@ -29,6 +33,8 @@ $$
 
 <sup>&</sup>lt;sup>2</sup>Hartley, R. V. L., "Transmission of Information," *Bell System Technical Journal*, July 1928, p. 535.
 
+{1}------------------------------------------------
+
 ![](_page_1_Figure_0.jpeg)
 
 Fig. 1—Schematic diagram of a general communication system.
@@ -43,7 +49,11 @@ By a communication system we will mean a system of the type indicated schematica
 - 4. The *receiver* ordinarily performs the inverse operation of that done by the transmitter, reconstructing the message from the signal.
 - 5. The *destination* is the person (or thing) for whom the message is intended.
 
-We wish to consider certain general problems involving communication systems. To do this it is first necessary to represent the various elements involved as mathematical entities, suitably idealized from their physical counterparts. We may roughly classify communication systems into three main categories: discrete, continuous and mixed. By a discrete system we will mean one in which both the message and the signal are a sequence of discrete symbols. A typical case is telegraphy where the message is a sequence of letters and the signal a sequence of dots, dashes and spaces. A continuous system is one in which the message and signal are both treated as continuous functions, e.g., radio or television. A mixed system is one in which both discrete and continuous variables appear, e.g., PCM transmission of speech.
+We wish to consider certain general problems involving communication systems. To do this it is first necessary to represent the various elements involved as mathematical entities, suitably idealized from their 
+
+{2}------------------------------------------------
+
+physical counterparts. We may roughly classify communication systems into three main categories: discrete, continuous and mixed. By a discrete system we will mean one in which both the message and the signal are a sequence of discrete symbols. A typical case is telegraphy where the message is a sequence of letters and the signal a sequence of dots, dashes and spaces. A continuous system is one in which the message and signal are both treated as continuous functions, e.g., radio or television. A mixed system is one in which both discrete and continuous variables appear, e.g., PCM transmission of speech.
 
 We first consider the discrete case. This case has applications not only in communication theory, but also in the theory of computing machines, the design of telephone exchanges and other fields. In addition the discrete case forms a foundation for the continuous and mixed cases which will be treated in the second half of the paper.
 
@@ -76,6 +86,8 @@ The total number is equal to the sum of the numbers of sequences ending in  $S_1
 $$
 X^{-t_1} + X^{-t_2} + \cdots + X^{-t_n} = 1
 $$
+
+{3}------------------------------------------------
 
 and therefore
 
@@ -119,7 +131,11 @@ On expansion this leads to the equation given above for this case.
 
 We have seen that under very general conditions the logarithm of the number of possible signals in a discrete channel increases linearly with time. The capacity to transmit information can be specified by giving this rate of increase, the number of bits per second required to specify the particular signal used.
 
-We now consider the information source. How is an information source to be described mathematically, and how much information in bits per second is produced in a given source? The main point at issue is the effect of statistical knowledge about the source in reducing the required capacity of the channel, by the use of proper encoding of the information. In telegraphy, for example, the messages to be transmitted consist of sequences of letters. These sequences, however, are not completely random. In general, they form sentences and have the statistical structure of, say, English. The letter E occurs more frequently than Q, the sequence TH more frequently than XP, etc. The existence of this structure allows one to make a saving in time (or channel capacity) by properly encoding the message sequences into signal sequences. This is already done to a limited extent in telegraphy by using the shortest channel symbol, a dot, for the most common English letter E; while the infrequent letters, Q, X, Z are represented by longer sequences of dots and dashes. This idea is carried still further in certain commercial codes where common words and phrases are represented by four- or five-letter code groups with a considerable saving in average time. The standardized greeting and anniversary telegrams now in use extend this to the point of encoding a sentence or two into a relatively short sequence of numbers.
+We now consider the information source. How is an information source to be described mathematically, and how much information in bits per second is produced in a given source? The main point at issue is the effect of statistical knowledge about the source in reducing the required capacity of the channel, by the use 
+
+{4}------------------------------------------------
+
+of proper encoding of the information. In telegraphy, for example, the messages to be transmitted consist of sequences of letters. These sequences, however, are not completely random. In general, they form sentences and have the statistical structure of, say, English. The letter E occurs more frequently than Q, the sequence TH more frequently than XP, etc. The existence of this structure allows one to make a saving in time (or channel capacity) by properly encoding the message sequences into signal sequences. This is already done to a limited extent in telegraphy by using the shortest channel symbol, a dot, for the most common English letter E; while the infrequent letters, Q, X, Z are represented by longer sequences of dots and dashes. This idea is carried still further in certain commercial codes where common words and phrases are represented by four- or five-letter code groups with a considerable saving in average time. The standardized greeting and anniversary telegrams now in use extend this to the point of encoding a sentence or two into a relatively short sequence of numbers.
 
 We can think of a discrete source as generating the message, symbol by symbol. It will choose successive symbols according to certain probabilities depending, in general, on preceding choices as well as the particular symbols in question. A physical system, or a mathematical model of a system which produces such a sequence of symbols governed by a set of probabilities, is known as a stochastic process.<sup>3</sup> We may consider a discrete source, therefore, to be represented by a stochastic process. Conversely, any stochastic process which produces a discrete sequence of symbols chosen from a finite set may be considered a discrete source. This will include such cases as:
 
@@ -136,6 +152,8 @@ This was constructed with the use of a table of random numbers.<sup>4</sup>
 <sup>&</sup>lt;sup>3</sup>See, for example, S. Chandrasekhar, "Stochastic Problems in Physics and Astronomy," *Reviews of Modern Physics*, v. 15, No. 1, January 1943, p. 1.
 
 <sup>&</sup>lt;sup>4</sup>Kendall and Smith, *Tables of Random Sampling Numbers*, Cambridge, 1939.
+
+{5}------------------------------------------------
 
  $p_i(j)$  and the digram probabilities  $p(i, j)$  are related by the following formulas:
 
@@ -182,6 +200,8 @@ These artificial languages are useful in constructing simple problems and exampl
 
 <sup>&</sup>lt;sup>5</sup>Letter, digram and trigram frequencies are given in *Secret and Urgent* by Fletcher Pratt, Blue Ribbon Books, 1939. Word frequencies are tabulated in Relative Frequency of English Speech Sounds, G. Dewey, Harvard University Press, 1923.
 
+{6}------------------------------------------------
+
 digrams such as TH, ED, etc. In the second-order approximation, digram structure is introduced. After a letter is chosen, the next one is chosen in accordance with the frequencies with which the various letters follow the first one. This requires a table of digram frequencies  $p_i(j)$ . In the third-order approximation, trigram structure is introduced. Each letter is chosen with probabilities which depend on the preceding two letters.
 
 3. THE SERIES OF APPROXIMATIONS TO ENGLISH
@@ -216,6 +236,8 @@ The resemblance to ordinary English text increases quite noticeably at each of t
 
 The first two samples were constructed by the use of a book of random numbers in conjunction with (for example 2) a table of letter frequencies. This method might have been continued for  $(3)$ ,  $(4)$  and  $(5)$ , since digram, trigram and word frequency tables are available, but a simpler equivalent method was used.
 
+{7}------------------------------------------------
+
 To construct  $(3)$  for example, one opens a book at random and selects a letter at random on the page. This letter is recorded. The book is then opened to another page and one reads until this letter is encountered. The succeeding letter is then recorded. Turning to another page this second letter is searched for and the succeeding letter recorded, etc. A similar process was used for  $(4)$ ,  $(5)$  and  $(6)$ . It would be interesting if further approximations could be constructed, but the labor involved becomes enormous at the next stage.
 
 ### 4. GRAPHICAL REPRESENTATION OF A MARKOFF PROCESS
@@ -242,6 +264,8 @@ As we have indicated above a discrete source for our purposes can be considered 
 
 <sup>&</sup>lt;sup>6</sup>For a detailed treatment see M. Fréchet, *Méthode des fonctions arbitraires. Théorie des événements en chaîne dans le cas d'un* nombre fini d'états possibles. Paris, Gauthier-Villars, 1938.
 
+{8}------------------------------------------------
+
 is the same in statistical properties. Thus the letter frequencies, digram frequencies, etc., obtained from particular sequences, will, as the lengths of the sequences increase, approach definite limits independent of the particular sequence. Actually this is not true of every sequence but the set for which it is false has probability zero. Roughly the ergodic property means statistical homogeneity.
 
 All the examples of artificial languages given above are ergodic. This property is related to the structure of the corresponding graph. If the graph has the following two properties<sup>7</sup> the corresponding process will be ergodic:
@@ -266,6 +290,8 @@ L = p_1L_1 + p_2L_2 + p_3L_3 + \cdots
 $$
 
 <sup>&</sup>lt;sup>7</sup>These are restatements in terms of the graph of conditions given in Fréchet.
+
+{9}------------------------------------------------
 
 where  $p_i$  is the probability of the component source  $L_i$ .
 
@@ -313,6 +339,8 @@ $$
 
 The coefficient  $\frac{1}{2}$  is because this second choice only occurs half the time.
 
+{10}------------------------------------------------
+
 In Appendix 2, the following result is established:
 
 Theorem 2: The only  $H$  satisfying the three above assumptions is of the form:
@@ -346,6 +374,8 @@ The quantity  $H$  has a number of interesting properties which further substant
 2. For a given *n*, *H* is a maximum and equal to log *n* when all the  $p_i$  are equal (i.e.,  $\frac{1}{n}$ ). This is also intuitively the most uncertain situation.
 
 <sup>8</sup>See, for example, R. C. Tolman, *Principles of Statistical Mechanics*, Oxford, Clarendon, 1938.
+
+{11}------------------------------------------------
 
 3. Suppose there are two events, x and y, in question with m possibilities for the first and n for the second. Let  $p(i, j)$  be the probability of the joint occurrence of i for the first and j for the second. The entropy of the joint event is
 
@@ -420,6 +450,8 @@ $$
 
 The uncertainty of y is never increased by knowledge of x. It will be decreased unless x and y are independent events, in which case it is not changed.
 
+{12}------------------------------------------------
+
 #### 7. THE ENTROPY OF AN INFORMATION SOURCE
 
 Consider a discrete source of the finite state type considered above. For each possible state *i* there will be a set of probabilities  $p_i(j)$  of producing the various possible symbols j. Thus there is an entropy  $H_i$  for each state. The entropy of the source will be defined as the average of these  $H_i$  weighted in accordance with the probability of occurrence of the states in question:
@@ -480,6 +512,8 @@ $$
 
 A closely related result deals with the number of sequences of various probabilities. Consider again the sequences of length N and let them be arranged in order of decreasing probability. We define  $n(q)$  to be the number we must take from this set starting with the most probable one in order to accumulate a total probability  $q$  for those taken.
 
+{13}------------------------------------------------
+
 *Theorem 4:* 
 
 $$
@@ -530,7 +564,11 @@ and  $\text{Lim}_{N\to\infty} F_N = H$ .
 
 These results are derived in Appendix 3. They show that a series of approximations to  $H$  can be obtained by considering only the statistical structure of the sequences extending over  $1, 2, ..., N$  symbols.  $F_N$  is the better approximation. In fact  $F_N$  is the entropy of the N<sup>th</sup> order approximation to the source of the type discussed above. If there are no statistical influences extending over more than  $N$  symbols, that is if the conditional probability of the next symbol knowing the preceding  $(N-1)$  is not changed by a knowledge of any before that, then  $F_N = H$ .  $F_N$  of course is the conditional entropy of the next symbol when the  $(N-1)$ preceding ones are known, while  $G_N$  is the entropy per symbol of blocks of N symbols.
 
-The ratio of the entropy of a source to the maximum value it could have while still restricted to the same symbols will be called its *relative entropy*. This is the maximum compression possible when we encode into the same alphabet. One minus the relative entropy is the *redundancy*. The redundancy of ordinary English, not considering statistical structure over greater distances than about eight letters, is roughly 50%. This means that when we write English half of what we write is determined by the structure of the language and half is chosen freely. The figure 50% was found by several independent methods which all gave results in this neighborhood. One is by calculation of the entropy of the approximations to English. A second method is to delete a certain fraction of the letters from a sample of English text and then let someone attempt to restore them. If they can be restored when 50% are deleted the redundancy must be greater than 50%. A third method depends on certain known results in cryptography.
+The ratio of the entropy of a source to the maximum value it could have while still restricted to the same symbols will be called its *relative entropy*. This is the maximum compression possible when we encode into the same alphabet. One minus the relative entropy is the *redundancy*. The redundancy of ordinary English, not considering statistical structure over greater distances than about eight letters, is roughly 50%. This means that when we write English half of what we write is determined by the structure of the language and half is chosen freely. The figure 50% was found by several independent methods which all gave results in 
+
+{14}------------------------------------------------
+
+this neighborhood. One is by calculation of the entropy of the approximations to English. A second method is to delete a certain fraction of the letters from a sample of English text and then let someone attempt to restore them. If they can be restored when 50% are deleted the redundancy must be greater than 50%. A third method depends on certain known results in cryptography.
 
 Two extremes of redundancy in English prose are represented by Basic English and by James Joyce's book "Finnegans Wake". The Basic English vocabulary is limited to 850 words and the redundancy is very high. This is reflected in the expansion that occurs when a passage is translated into Basic English. Joyce on the other hand enlarges the vocabulary and is alleged to achieve a compression of semantic content.
 
@@ -559,6 +597,8 @@ If the output symbols of one transducer can be identified with the input symbols
 Theorem 7: The output of a finite state transducer driven by a finite state statistical source is a finite state statistical source, with entropy (per unit time) less than or equal to that of the input. If the transducer is non-singular they are equal.
 
 Let  $\alpha$  represent the state of the source, which produces a sequence of symbols  $x_i$ ; and let  $\beta$  be the state of the transducer, which produces, in its output, blocks of symbols  $y_i$ . The combined system can be represented by the "product state space" of pairs  $(\alpha, \beta)$ . Two points in the space  $(\alpha_1, \beta_1)$  and  $(\alpha_2, \beta_2)$ , are connected by a line if  $\alpha_1$  can produce an x which changes  $\beta_1$  to  $\beta_2$ , and this line is given the probability of that x in this case. The line is labeled with the block of  $y_i$  symbols produced by the transducer. The entropy of the output can be calculated as the weighted sum over the states. If we sum first on  $\beta$  each resulting term is less than or equal to the corresponding term for  $\alpha$ , hence the entropy is not increased. If the transducer is non-singular let its output be connected to the inverse transducer. If  $H'_1$ ,  $H'_2$  and  $H'_3$  are the output entropies of the source, the first and second transducers respectively, then  $H'_1 \geq H'_2 \geq H'_3 = H'_1$  and therefore  $H'_1 = H'_2$ .
+
+{15}------------------------------------------------
 
 Suppose we have a system of constraints on possible sequences of the type which can be represented by a linear graph as in Fig. 2. If probabilities  $p_{ij}^{(s)}$  were assigned to the various lines connecting state *i* to state *j* this would become a source. There is one particular assignment which maximizes the resulting en Appendix  $4$ ).
 
@@ -603,6 +643,8 @@ where  $\varphi$  is small. The mean rate of transmission in message symbols per
 $$
 \left[ (1-\delta)\frac{T}{N} + \delta \frac{T_1}{N} \right]^{-1} = \left[ (1-\delta)\left(\frac{H}{C} + \lambda\right) + \delta\left(\frac{R}{C} + \varphi\right) \right]^{-1}
 $$
+
+{16}------------------------------------------------
 
 As N increases  $\delta$ ,  $\lambda$  and  $\varphi$  approach zero and the rate approaches  $\frac{C}{H}$ .
 
@@ -654,6 +696,8 @@ In order to obtain the maximum power transfer from a generator to a load, a tran
 
 <sup>&</sup>lt;sup>9</sup>Technical Report No. 65, The Research Laboratory of Electronics, M.I.T., March 17, 1949.
 
+{17}------------------------------------------------
+
 as the source which maximizes the entropy in the channel. The content of Theorem 9 is that, although an exact match is not in general possible, we can approximate it as closely as desired. The ratio of the actual rate of transmission to the capacity  $C$  may be called the efficiency of the coding system. This is of course equal to the ratio of the actual entropy of the channel symbols to the maximum possible entropy.
 
 In general, ideal or nearly ideal encoding requires a long delay in the transmitter and receiver. In the noiseless case which we have been considering, the main function of this delay is to allow reasonably good matching of probabilities to corresponding lengths of sequences. With a good code the logarithm of the reciprocal probability of a long message must be proportional to the duration of the corresponding signal, in fact
@@ -691,6 +735,8 @@ It is easily seen that the binary digits 0, 1 have probabilities  $\frac{1}{2}$ 
 $$
 \begin{array}{ccc} 00 & A' \\ 01 & B' \\ 10 & C' \\ 11 & D' \end{array}
 $$
+
+{18}------------------------------------------------
 
 This double process then encodes the original message into the same symbols but with an average compression ratio  $\frac{7}{8}$ .
 
@@ -733,6 +779,8 @@ $$
 
 All of these entropies can be measured on a per-second or a per-symbol basis.
 
+{19}------------------------------------------------
+
 #### 12. EQUIVOCATION AND CHANNEL CAPACITY
 
 If the channel is noisy it is not in general possible to reconstruct the original message or the transmitted signal with *certainty* by any operation on the received signal E. There are, however, ways of transmitting the information which are optimal in combating noise. This is the problem which we now consider.
@@ -769,6 +817,8 @@ The following theorem gives a direct intuitive interpretation of the equivocatio
 
 Theorem 10: If the correction channel has a capacity equal to  $H_y(x)$  it is possible to so encode the correction data as to send it over this channel and correct all but an arbitrarily small fraction  $\epsilon$  of the errors. This is not possible if the channel capacity is less than  $H<sub>y</sub>(x)$ .
 
+{20}------------------------------------------------
+
 ![](_page_20_Figure_0.jpeg)
 
 Fig. 8—Schematic diagram of a correction system.
@@ -795,9 +845,7 @@ $$
 
 If we identify x as the output of the source, y as the received signal and z as the signal sent over the correction channel, then the right-hand side is the equivocation less the rate of transmission over the correction channel. If the capacity of this channel is less than the equivocation the right-hand side will be greater than zero and  $H_{yz}(x) > 0$ . But this is the uncertainty of what was sent, knowing both the received signal and the correction signal. If this is greater than zero the frequency of errors cannot be arbitrarily small.
 
-#### *Example:*
-
-Suppose the errors occur at random in a sequence of binary digits: probability  $p$  that a digit is wrong and  $q = 1 - p$  that it is right. These errors can be corrected if their position is known. Thus the correction channel need only send information as to these positions. This amounts to transmitting from a source which produces binary digits with probability  $p$  for 1 (incorrect) and  $q$  for 0 (correct). This requires a channel of capacity
+*Example:* Suppose the errors occur at random in a sequence of binary digits: probability  $p$  that a digit is wrong and  $q = 1 - p$  that it is right. These errors can be corrected if their position is known. Thus the correction channel need only send information as to these positions. This amounts to transmitting from a source which produces binary digits with probability  $p$  for 1 (incorrect) and  $q$  for 0 (correct). This requires a channel of capacity
 
 $$
 -[p\log p + q\log q]
@@ -813,6 +861,8 @@ $$
   
 = H(y) - H<sub>x</sub>(y)  
 = H(x) + H(y) - H(x,y).
+
+{21}------------------------------------------------
 
 The first defining expression has already been interpreted as the amount of information sent less the uncertainty of what was sent. The second measures the amount received less the part of this which is due to noise. The third is the sum of the two amounts less the joint entropy and therefore in a sense is the number of bits per second common to the two. Thus all three expressions have a certain intuitive significance.
 
@@ -840,6 +890,8 @@ The method of proving the first part of this theorem is not by exhibiting a codi
 
 Fig. 9—The equivocation possible for a given input entropy to a channel.
 
+{22}------------------------------------------------
+
 average the frequency of errors over this group and show that this average can be made less than  $\epsilon$ . If the average of a set of numbers is less than  $\epsilon$  there must exist at least one in the set which is less than  $\epsilon$ . This will establish the desired result.
 
 The capacity  $C$  of a noisy channel has been defined as
@@ -866,7 +918,11 @@ The situation is summarized in Fig. 10 where the input sequences are points on t
 
 Fig. 10—Schematic representation of the relations between inputs and outputs in a channel.
 
-Now suppose we have another source producing information at rate *R* with  $R < C$ . In the period *T* this source will have  $2^{TR}$  high probability messages. We wish to associate these with a selection of the possible channel inputs in such a way as to get a small frequency of errors. We will set up this association in all possible ways (using, however, only the high probability group of inputs as determined by the source  $S_0$ ) and average the frequency of errors for this large class of possible coding systems. This is the same as calculating the frequency of errors for a random association of the messages and channel inputs of duration T. Suppose a particular output  $y_1$  is observed. What is the probability of more than one message in the set of possible causes of  $y_1$ ? There are  $2^{TR}$  messages distributed at random in  $2^{TH(x)}$  points. The probability of a particular point being a message is thus
+Now suppose we have another source producing information at rate *R* with  $R < C$ . In the period *T* this source will have  $2^{TR}$  high probability messages. We wish to associate these with a selection of the possible channel inputs in such a way as to get a small frequency of errors. We will set up this association in all 
+
+{23}------------------------------------------------
+
+possible ways (using, however, only the high probability group of inputs as determined by the source  $S_0$ ) and average the frequency of errors for this large class of possible coding systems. This is the same as calculating the frequency of errors for a random association of the messages and channel inputs of duration T. Suppose a particular output  $y_1$  is observed. What is the probability of more than one message in the set of possible causes of  $y_1$ ? There are  $2^{TR}$  messages distributed at random in  $2^{TH(x)}$  points. The probability of a particular point being a message is thus
 
 $$
 2^{T(R-H(x))}
@@ -909,6 +965,8 @@ Actually more has been proved than was stated in the theorem. If the average of 
 The demonstration of Theorem 11, while not a pure existence proof, has some of the deficiencies of such proofs. An attempt to obtain a good approximation to ideal coding by following the method of the proof is generally impractical. In fact, apart from some rather trivial cases and certain limiting situations, no explicit description of a series of approximation to the ideal has been found. Probably this is no accident but is related to the difficulty of giving an explicit construction for a good approximation to a random sequence.
 
 An approximation to the ideal would have the property that if the signal is altered in a reasonable way by the noise, the original can still be recovered. In other words the alteration will not in general bring it closer to another reasonable signal than the original. This is accomplished at the cost of a certain amount of redundancy in the coding. The redundancy must be introduced in the proper way to combat the particular noise structure involved. However, any redundancy in the source will usually help if it is utilized at the receiving point. In particular, if the source already has a certain redundancy and no attempt is made to eliminate it in matching to the channel, this redundancy will help combat noise. For example, in a noiseless telegraph channel one could save about 50% in time by proper encoding of the messages. This is not done and most of the redundancy of English remains in the channel symbols. This has the advantage, however, of allowing considerable noise in the channel. A sizable fraction of the letters can be received incorrectly and still reconstructed by the context. In fact this is probably not a bad approximation to the ideal in many cases, since the statistical structure of English is rather involved and the reasonable English sequences are not too far (in the sense required for the theorem) from a random selection.
+
+{24}------------------------------------------------
 
 As in the noiseless case a delay is generally required to approach the ideal encoding. It now has the additional function of allowing a large sample of noise to affect the signal before any judgment is made at the receiving point as to the original message. Increasing the sample size always sharpens the possible statistical assertions.
 
@@ -958,6 +1016,8 @@ $$
 $$
 P = Qe^{\alpha} = Q\beta
 $$
+
+{25}------------------------------------------------
 
 $$
 P = \frac{\beta}{\beta + 2} \qquad \qquad Q = \frac{1}{\beta + 2}.
@@ -1019,6 +1079,8 @@ $$
 C = \log m + \sum p_i \log p_i.
 $$
 
+{26}------------------------------------------------
+
 ![](_page_26_Figure_0.jpeg)
 
 Fig. 12—Examples of discrete channels with the same transition probabilities for each input and for each output.
@@ -1072,6 +1134,8 @@ $$
 
 An efficient code, allowing complete correction of errors and transmitting at the rate  $C$ , is the following (found by a method due to R. Hamming):
 
+{27}------------------------------------------------
+
 Let a block of seven symbols be  $X_1, X_2, ..., X_7$ . Of these  $X_3, X_5, X_6$  and  $X_7$  are message symbols and chosen arbitrarily by the source. The other three are redundant and calculated as follows:
 
 $$
@@ -1083,9 +1147,9 @@ $$
 
 When a block of seven is received  $\alpha$ ,  $\beta$  and  $\gamma$  are calculated and if even called zero, if odd called one. The binary number  $\alpha \beta \gamma$  then gives the subscript of the  $X_i$  that is incorrect (if 0 there was no error).
 
-## THE GROWTH OF THE NUMBER OF BLOCKS OF SYMBOLS WITH A FINITE STATE CONDITION
+#### THE GROWTH OF THE NUMBER OF BLOCKS OF SYMBOLS WITH A FINITE STATE CONDITION
 
-## THE GROWTH OF THE NUMBER OF BLOCKS OF SYMBOLS WITH A FINITE STATE CONDITION
+#### THE GROWTH OF THE NUMBER OF BLOCKS OF SYMBOLS WITH A FINITE STATE CONDITION
 
 Let  $N_i(L)$  be the number of blocks of symbols of length L ending in state i. Then we have
 
@@ -1130,7 +1194,7 @@ $$
 
 and we also note that the same growth properties result if we require that all blocks start in the same (arbitrarily chosen) state.
 
-## APPENDIX 2
+### APPENDIX 2
 
 ## DERIVATION OF $H = -\sum p_i \log p_i$
 
@@ -1139,6 +1203,8 @@ Let  $H\left(\frac{1}{n}, \frac{1}{n}, \dots, \frac{1}{n}\right) = A(n)$ . From 
 $$
 A(s^m) = mA(s).
 $$
+
+{28}------------------------------------------------
 
 Similarly
 
@@ -1195,7 +1261,7 @@ $$
 
 If the  $p_i$  are incommeasurable, they may be approximated by rationals and the same expression must hold by our continuity assumption. Thus the expression holds in general. The choice of coefficient K is a matter of convenience and amounts to the choice of a unit of measure.
 
-## APPENDIX 3
+### APPENDIX 3
 
 ## THEOREMS ON ERGODIC SOURCES
 
@@ -1210,6 +1276,8 @@ Hence nearly all sequences have a probability  $p$  given by
 $$
 p = \prod p_{ij}^{(P_i p_{ij} \pm \delta)N}
 $$
+
+{29}------------------------------------------------
 
 and  $\frac{\log p}{N}$  is limited by
 
@@ -1250,7 +1318,7 @@ and summing this for all *N* gives  $G_N = \frac{1}{N} \sum F_n$ . Hence  $G_N \
 
 ## **APPENDIX 4**
 
-## MAXIMIZING THE RATE FOR A SYSTEM OF CONSTRAINTS
+#### MAXIMIZING THE RATE FOR A SYSTEM OF CONSTRAINTS
 
 Suppose we have a set of constraints on sequences of symbols that is of the finite state type and can be represented therefore by a linear graph. Let  $\ell_{ij}^{(s)}$  be the lengths of the various symbols that can occur in passing from state *i* to state *j*. What distribution of probabilities  $P_i$  for the different states and  $p_{ij}^{(s)}$  for choosing symbol s in state i and going to state j maximizes the rate of generating information under these constraints? The constraints define a discrete channel and the maximum rate must be less than or equal to the capacity C of this channel, since if all blocks of large length were equally likely, this rate would result, and if possible this would be best. We will show that this rate can be achieved by proper choice of the  $P_i$  and  $p_{ij}^{(s)}$ . The rate in question is
 
@@ -1268,6 +1336,8 @@ $$
 $$
 \frac{\partial U}{\partial p_{ij}} = -\frac{MP_i (1 + \log p_{ij}) + NP_i \ell_{ij}}{M^2} + \lambda + \mu_i + \eta_i P_i = 0.
 $$
+
+{30}------------------------------------------------
 
 Solving for  $p_{ij}$ 
 
@@ -1327,6 +1397,8 @@ $$
 
 Hence the rate is  $C$  and as this could never be exceeded this is the maximum, justifying the assumed solution.
 
+{31}------------------------------------------------
+
 ## PART III: MATHEMATICAL PRELIMINARIES
 
 In this final installment of the paper we consider the case where the signals or the messages or both are continuously variable, in contrast with the discrete nature assumed heretofore. To a considerable extent the continuous case can be obtained through a limiting process from the discrete case by dividing the continuum of messages and signals into a large but finite number of small regions and calculating the various parameters involved on a discrete basis. As the size of the regions is decreased these parameters in general approach as limits the proper values for the continuous case. There are, however, a few new effects that appear and also a general change of emphasis in the direction of specialization of the general results to particular cases.
@@ -1382,6 +1454,8 @@ with the amplitudes  $a_i$  distributed normally and independently, and the phas
 
 <sup>&</sup>lt;sup>1</sup>In mathematical terminology the functions belong to a measure space whose total measure is unity.
 
+{32}------------------------------------------------
+
 3. The ensemble
 
 $$
@@ -1436,6 +1510,8 @@ Of the examples given, 3 and 4 are ergodic, and 5 may perhaps be considered so. 
 
 <sup>&</sup>lt;sup>3</sup>This is the famous ergodic theorem or rather one aspect of this theorem which was proved in somewhat different formulations by Birkoff, von Neumann, and Koopman, and subsequently generalized by Wiener, Hopf, Hurewicz and others. The literature on ergodic theory is quite extensive and the reader is referred to the papers of these writers for precise and general formulations; e.g., E. Hopf, "Ergodentheorie," *Ergebnisse der Mathematik und ihrer Grenzgebiete*, v. 5; "On Causality Statistics and Probability," *Journal* of Mathematics and Physics, v. XIII, No. 1, 1934; N. Wiener, "The Ergodic Theorem," Duke Mathematical Journal, v. 5, 1939.
 
+{33}------------------------------------------------
+
 Just as we may perform various operations on numbers or functions to obtain new numbers or functions, we can perform operations on ensembles to obtain new ensembles. Suppose, for example, we have an ensemble of functions  $f_{\alpha}(t)$  and an operator T which gives for each function  $f_{\alpha}(t)$  a resulting function  $g_{\alpha}(t)$ :
 
 $$
@@ -1483,6 +1559,8 @@ $$
 <sup>4</sup>Communication theory is heavily indebted to Wiener for much of its basic philosophy and theory. His classic NDRC report, The Interpolation, Extrapolation and Smoothing of Stationary Time Series (Wiley, 1949), contains the first clear-cut formulation of communication theory as a statistical problem, the study of operations on time series. This work, although chiefly concerned with the linear prediction and filtering problem, is an important collateral reference in connection with the present paper. We may also refer here to Wiener's Cybernetics (Wiley, 1948), dealing with the general problems of communication and control.
 
 <sup>&</sup>lt;sup>5</sup>For a proof of this theorem and further discussion see the author's paper "Communication in the Presence of Noise" published in the Proceedings of the Institute of Radio Engineers, v. 37, No. 1, Jan., 1949, pp. 10–21.
+
+{34}------------------------------------------------
 
 In this expansion  $f(t)$  is represented as a sum of orthogonal functions. The coefficients  $X_n$  of the various terms can be considered as coordinates in an infinite dimensional "function space." In this space each function corresponds to precisely one point and each point to one function.
 
@@ -1540,6 +1618,8 @@ $$
 The entropies of continuous distributions have most (but not all) of the properties of the discrete case. In particular we have the following:
 
 1. If x is limited to a certain volume v in its space, then  $H(x)$  is a maximum and equal to  $\log v$  when  $p(x)$ is constant  $(1/v)$  in the volume.
+
+{35}------------------------------------------------
 
 2. With any two variables  $x$ ,  $y$  we have
 
@@ -1614,6 +1694,8 @@ $$
 
 Then the maximum entropy occurs (by a similar calculation) when  $p(x_1,...,x_n)$  is the *n* dimensional Gaussian distribution with the second order moments  $A_{ij}$ .
 
+{36}------------------------------------------------
+
 6. The entropy of a one-dimensional Gaussian distribution whose standard deviation is  $\sigma$  is given by
 
 $$
@@ -1676,6 +1758,8 @@ $$
 H(y) = H(x) - \int \cdots \int p(x_1,\ldots,x_n) \log J\left(\frac{x}{y}\right) dx_1 \ldots dx_n.
 $$
 
+{37}------------------------------------------------
+
 Thus the new entropy is the old entropy less the expected logarithm of the Jacobian. In the continuous case the entropy can be considered a measure of randomness *relative to an assumed standard*, namely the coordinate system chosen with each small volume element  $dx_1 \cdots dx_n$  given equal weight. When we change the coordinate system the entropy in the new system measures the randomness when equal volume elements  $dy_1 \cdots dy_n$  in the new system are given equal weight.
 
 In spite of this dependence on the coordinate system the entropy concept is as important in the continuous case as the discrete case. This is due to the fact that the derived concepts of information rate and channel capacity depend on the *difference* of two entropies and this difference *does not* depend on the coordinate frame, each of the two terms being changed by the same amount.
@@ -1729,6 +1813,8 @@ More precisely, if we assume  $p(x_1,...,x_n)$  continuous in all the  $x_i$  fo
 $$
 \left|\frac{\log p}{n} - H'\right| < \epsilon
 $$
+
+{38}------------------------------------------------
 
 for all choices of  $(x_1, ..., x_n)$  apart from a set whose total probability is less than  $\delta$ , with  $\delta$  and  $\epsilon$  arbitrarily small. This follows form the ergodic property if we divide the space into a large number of small cells.
 
@@ -1784,17 +1870,19 @@ $$
 N_1 \exp \frac{1}{W} \int_W \log |Y(f)|^2 df.
 $$
 
+{39}------------------------------------------------
+
 | . |  |
 |---|--|
 |---|--|
 
-| GAIN                         | ENTROPY<br>POWER<br>FACTOR   | ENTROPY<br>POWER GAIN<br>IN DECIBELS | IMPULSE RESPONSE                                                                  |
-|------------------------------|------------------------------|--------------------------------------|-----------------------------------------------------------------------------------|
-| Image: graph of 1-ω<br>0     | $\frac{1}{e^2}$              | $-8.69$                              | $\frac{\sin^2(t/2)}{t^2/2}$                                                       |
-| Image: graph of 1-ω²<br>0    | $\left(\frac{2}{e}\right)^4$ | $-5.33$                              | $2\left[\frac{\sin t}{t^3} - \frac{\cos t}{t^2}\right]$                           |
-| Image: graph of 1-ω³<br>0    | 0.411                        | $-3.87$                              | $6\left[\frac{\cos t - 1}{t^4} - \frac{\cos t}{2t^2} + \frac{\sin t}{t^3}\right]$ |
-| Image: graph of √(1-ω²)<br>0 | $\left(\frac{2}{e}\right)^2$ | $-2.67$                              | $\frac{\pi}{2}\frac{J_1(t)}{t}$                                                   |
-| Image: graph with alpha<br>0 | $\frac{1}{e^{2\alpha}}$      | $-8.69\alpha$                        | $\frac{1}{\alpha t^2} \left[ \cos(1-\alpha)t - \cos t \right]$                    |
+| GAIN                                       | ENTROPY<br>POWER<br>FACTOR               | ENTROPY<br>POWER GAIN<br>IN DECIBELS | IMPULSE RESPONSE                                                                              |
+|--------------------------------------------|------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------|
+| Image: Graph of 1-ω<br>0<br>               | $       \frac{1}{e^2}     $              | $-8.69$                              | $       \frac{\sin^2(t/2)}{t^2/2}     $                                                       |
+| Image: Graph of 1-ω²<br>0                  | $       \left(\frac{2}{e}\right)^4     $ | $-5.33$                              | $       2\left[\frac{\sin t}{t^3} - \frac{\cos t}{t^2}\right]     $                           |
+| Image: Graph of 1-ω³<br>0                  | 0.411                                    | $-3.87$                              | $       6\left[\frac{\cos t - 1}{t^4} - \frac{\cos t}{2t^2} + \frac{\sin t}{t^3}\right]     $ |
+| Image: Graph of √(1-ω²)<br>0               | $       \left(\frac{2}{e}\right)^2     $ | $-2.67$                              | $       \frac{\pi}{2}\frac{J_1(t)}{t}     $                                                   |
+| Image: Graph of a function with alpha<br>0 | $       \frac{1}{e^{2\alpha}}     $      | $       -8.69\alpha     $            | $       \frac{1}{\alpha t^2} \left[ \cos(1-\alpha)t - \cos t \right]     $                    |
 
 The final entropy power is the initial entropy power multiplied by the geometric mean gain of the filter. If the gain is measured in  $db$ , then the output entropy power will be increased by the arithmetic mean  $db$  gain over  $W$ .
 
@@ -1804,7 +1892,11 @@ The entropy loss for many other cases can be obtained from these results. For ex
 
 # 23. ENTROPY OF A SUM OF TWO ENSEMBLES
 
-If we have two ensembles of functions  $f_{\alpha}(t)$  and  $g_{\beta}(t)$  we can form a new ensemble by "addition." Suppose the first ensemble has the probability density function  $p(x_1,...,x_n)$  and the second  $q(x_1,...,x_n)$ . Then the density function for the sum is given by the convolution:
+If we have two ensembles of functions  $f_{\alpha}(t)$  and  $g_{\beta}(t)$  we can form a new ensemble by "addition." Suppose the first ensemble has the probability density function  $p(x_1,...,x_n)$  and the second  $q(x_1,...,x_n)$ . Then the 
+
+{40}------------------------------------------------
+
+density function for the sum is given by the convolution:
 
 $$
 r(x_1,\ldots,x_n)=\int\cdots\int p(y_1,\ldots,y_n)q(x_1-y_1,\ldots,x_n-y_n)\,dy_1\cdots dy_n
@@ -1861,6 +1953,8 @@ $$
 P(x_1,\ldots,x_n)=P(x)
 $$
 
+{41}------------------------------------------------
+
 and those of the noise by the conditional probability distribution
 
 $$
@@ -1908,6 +2002,8 @@ An important special case occurs when the noise is added to the signal and is in
 $$
 P_x(y) = Q(y - x)
 $$
+
+{42}------------------------------------------------
 
 and we can assign a definite entropy to the noise (independent of the statistics of the signal), namely the entropy of the distribution  $Q(n)$ . This entropy will be denoted by  $H(n)$ .
 
@@ -1977,6 +2073,8 @@ To approximate this limiting rate of transmission the transmitted signals must a
 
 <sup>&</sup>lt;sup>6</sup>This and other properties of the white noise case are discussed from the geometrical point of view in "Communication in the Presence of Noise," loc. cit.
 
+{43}------------------------------------------------
+
  $M = 2<sup>s</sup>$  samples of white noise be constructed each of duration T. These are assigned binary numbers from 0 to  $M-1$ . At the transmitter the message sequences are broken up into groups of s and for each group the corresponding noise sample is transmitted as the signal. At the receiver the M samples are known and the actual received signal (perturbed by noise) is compared with each of them. The sample which has the least R.M.S. discrepancy from the received signal is chosen as the transmitted signal and the corresponding binary number reconstructed. This process amounts to choosing the most probable (*a posteriori*) signal. The number M of noise samples used will depend on the tolerable frequency  $\epsilon$  of errors, but for almost all selections of samples we have
 
 $$
@@ -2019,6 +2117,8 @@ $$
 <sup>7</sup>*Cybernetics, loc. cit.* 
 
 <sup>&</sup>lt;sup>8</sup> "Theoretical Limitations on the Rate of Transmission of Information," *Proceedings of the Institute of Radio Engineers*, v. 37, No. 5, May, 1949, pp. 468-78.
+
+{44}------------------------------------------------
 
 and
 
@@ -2080,6 +2180,8 @@ $$
 
 subject to the constraint that all the functions  $f(t)$  in the ensemble be less than or equal to  $\sqrt{S}$ , say, for all  $t$ . A constraint of this type does not work out as well mathematically as the average power limitation. The most we have obtained for this case is a lower bound valid for all  $\frac{S}{N}$ , an "asymptotic" upper bound (valid for large  $\frac{S}{N}$ ) and an asymptotic value of *C* for  $\frac{S}{N}$  small.
 
+{45}------------------------------------------------
+
 Theorem 20: The channel capacity  $C$  for a band  $W$  perturbed by white thermal noise of power  $N$  is bounded by
 
 $$
@@ -2132,6 +2234,8 @@ $$
 
 where *a*, the amplitude of the sample, is not greater than  $\sqrt{S}$ . Hence the output is the sum of shifted functions of the non-negative form above with the same coefficients. These functions being non-negative, the greatest positive value for any t is obtained when all the coefficients a have their maximum positive values, i.e.,  $\sqrt{S}$ . In this case the input function was a constant of amplitude  $\sqrt{S}$  and since the filter has unit gain for D.C., the output is the same. Hence the output ensemble has a peak power *S*.
 
+{46}------------------------------------------------
+
 The entropy of the output ensemble can be calculated from that of the input ensemble by using the theorem dealing with such a situation. The output entropy is equal to the input entropy plus the geometrical mean gain of the filter:
 
 $$
@@ -2176,9 +2280,11 @@ $$
 
 ## PART V: THE RATE FOR A CONTINUOUS SOURCE
 
-## 27. FIDELITY EVALUATION FUNCTIONS
+### 27. FIDELITY EVALUATION FUNCTIONS
 
 In the case of a discrete source of information we were able to determine a definite rate of generating information, namely the entropy of the underlying stochastic process. With a continuous source the situation is considerably more involved. In the first place a continuously variable quantity can assume an infinite number of values and requires, therefore, an infinite number of binary digits for exact specification. This means that to transmit the output of a continuous source with *exact recovery* at the receiving point requires,
+
+{47}------------------------------------------------
 
 in general, a channel of infinite capacity (in bits per second). Since, ordinarily, channels have a certain amount of noise, and therefore a finite capacity, exact transmission is impossible.
 
@@ -2219,6 +2325,8 @@ The following are simple examples of evaluation functions:
 
 <sup>9</sup>It is not a "metric" in the strict sense, however, since in general it does not satisfy either  $\rho(x, y) = \rho(y, x)$  or  $\rho(x, y) + \rho(y, z) \ge \rho(x, z)$ .
 
+{48}------------------------------------------------
+
 1. R.M.S. criterion.
 
 $$
@@ -2258,7 +2366,7 @@ $$
 - 4. The structure of the ear and brain determine implicitly an evaluation, or rather a number of evaluations, appropriate in the case of speech or music transmission. There is, for example, an "intelligibility" criterion in which  $\rho(x, y)$  is equal to the relative frequency of incorrectly interpreted words when message  $x(t)$  is received as  $y(t)$ . Although we cannot give an explicit representation of  $\rho(x, y)$  in these cases it could, in principle, be determined by sufficient experimentation. Some of its properties follow from well-known experimental results in hearing, e.g., the ear is relatively insensitive to phase and the sensitivity to amplitude and frequency is roughly logarithmic.
 - 5. The discrete case can be considered as a specialization in which we have tacitly assumed an evaluation based on the frequency of errors. The function  $\rho(x, y)$  is then defined as the number of symbols in the sequence y differing from the corresponding symbols in x divided by the total number of symbols in  $x$ .
 
-# 28. THE RATE FOR A SOURCE RELATIVE TO A FIDELITY EVALUATION
+## 28. THE RATE FOR A SOURCE RELATIVE TO A FIDELITY EVALUATION
 
 We are now in a position to define a rate of generating information for a continuous source. We are given  $P(x)$  for the source and an evaluation v determined by a distance function  $\rho(x, y)$  which will be assumed continuous in both x and y. With a particular system  $P(x, y)$  the quality is measured by
 
@@ -2277,6 +2385,8 @@ We define the rate  $R_1$  of generating information for a given quality  $v_1$ 
 $$
 R_1 = \underset{P_x(y)}{\text{Min}} \iint P(x, y) \log \frac{P(x, y)}{P(x)P(y)} dx dy
 $$
+
+{49}------------------------------------------------
 
 subject to the constraint:
 
@@ -2321,6 +2431,8 @@ A partial solution of the general maximizing problem for determining the rate of
 $$
 \iint \left[ P(x,y) \log \frac{P(x,y)}{P(x)P(y)} + \mu P(x,y) \rho(x,y) + \nu(x)P(x,y) \right] dx dy
 $$
+
+{50}------------------------------------------------
 
 The variational equation (when we take the first variation on  $P(x, y)$ ) leads to
 
@@ -2384,6 +2496,8 @@ $$
 where  $Q$  is the average power of the source,  $Q_1$  its entropy power and N the allowed mean square error.
 
 The lower bound follows from the fact that the Max  $H_y(x)$  for a given  $\overline{(x-y)^2} = N$  occurs in the white noise case. The upper bound results if we place points (used in the proof of Theorem 21) not in the best way but at random in a sphere of radius  $\sqrt{Q-N}$ .
+
+{51}------------------------------------------------
 
 ## ACKNOWLEDGMENTS
 
@@ -2459,6 +2573,8 @@ $$
 $$
 H_2 = -\int q(x_i) \log q(x_i) dx_i.
 $$
+
+{52}------------------------------------------------
 
 We consider then
 
@@ -2541,6 +2657,8 @@ $$
 
 which requires  $A_{ij} = \frac{H_1}{H_3} C_{ij}$ . In this case  $A_{ij} = \frac{H_1}{H_2} B_{ij}$  and both equations reduce to identities.
 
+{53}------------------------------------------------
+
 ## APPENDIX 7
 
 The following will indicate a more general and more rigorous approach to the central definitions of communication theory. Consider a probability measure space whose elements are ordered pairs  $(x, y)$ . The variables x, y are to be identified as the possible transmitted and received signals of some long duration  $T$ . Let us call the set of all points whose x belongs to a subset  $S_1$  of x points the strip over  $S_1$ , and similarly the set whose y belong to  $S_2$  the strip over  $S_2$ . We divide x and y into a collection of non-overlapping measurable subsets  $X_i$  and  $Y_i$  approximate to the rate of transmission R by
@@ -2606,7 +2724,11 @@ $$
 
 This integral, understood in the above sense, includes both the continuous and discrete cases and of course many others which cannot be represented in either form. It is trivial in this formulation that if x and u are in one-to-one correspondence, the rate from  $u$  to  $y$  is equal to that from  $x$  to  $y$ . If  $v$  is any function of  $y$  (not necessarily with an inverse) then the rate from x to y is greater than or equal to that from x to y since, in the calculation of the approximations, the subdivisions of  $y$  are essentially a finer subdivision of those for v. More generally if y and v are related not functionally but statistically, i.e., we have a probability measure space  $(y, y)$ , then  $R(x, y) < R(x, y)$ . This means that any operation applied to the received signal, even though it involves statistical elements, does not increase  $R$ .
 
-Another notion which should be defined precisely in an abstract formulation of the theory is that of "dimension rate," that is the average number of dimensions required per second to specify a member of an ensemble. In the band limited case 2W numbers per second are sufficient. A general definition can be framed as follows. Let  $f_{\alpha}(t)$  be an ensemble of functions and let  $\rho_T[f_{\alpha}(t), f_{\beta}(t)]$  be a metric measuring the "distance" from  $f_{\alpha}$  to  $f_{\beta}$  over the time T (for example the R.M.S. discrepancy over this interval.) Let  $N(\epsilon, \delta, T)$  be the least number of elements f which can be chosen such that all elements of the ensemble apart from a set of measure  $\delta$  are within the distance  $\epsilon$  of at least one of those chosen. Thus we are covering the space to within  $\epsilon$  apart from a set of small measure  $\delta$ . We define the dimension rate  $\lambda$  for the ensemble by the triple limit
+Another notion which should be defined precisely in an abstract formulation of the theory is that of "dimension rate," that is the average number of dimensions required per second to specify a member of an ensemble. In the band limited case 2W numbers per second are sufficient. A general definition can be framed as follows. Let  $f_{\alpha}(t)$  be an ensemble of functions and let  $\rho_T[f_{\alpha}(t), f_{\beta}(t)]$  be a metric measuring 
+
+{54}------------------------------------------------
+
+the "distance" from  $f_{\alpha}$  to  $f_{\beta}$  over the time T (for example the R.M.S. discrepancy over this interval.) Let  $N(\epsilon, \delta, T)$  be the least number of elements f which can be chosen such that all elements of the ensemble apart from a set of measure  $\delta$  are within the distance  $\epsilon$  of at least one of those chosen. Thus we are covering the space to within  $\epsilon$  apart from a set of small measure  $\delta$ . We define the dimension rate  $\lambda$  for the ensemble by the triple limit
 
 $$
 \lambda = \lim_{\delta \to 0} \lim_{\epsilon \to 0} \lim_{T \to \infty} \frac{\log N(\epsilon, \delta, T)}{T \log \epsilon}.
